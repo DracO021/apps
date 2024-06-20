@@ -7,7 +7,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import Slider from '@react-native-community/slider';
 
 const statusBarHeight = StatusBar.currentHeight;
-const KEY_GPT = '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';
+const KEY_GPT = '';
 
 export default function App() {
 
@@ -24,7 +24,7 @@ export default function App() {
     }
 
     if (tempo > 7) {
-      Alert.alert("Atenção", "O tempo de jogatina não deve ser em horário livre de compromissos e obrigações.");
+      Alert.alert("Atenção", "O tempo de jogatina não deve ser em horário livre de compromissos e obrigações para que você se entrenter sem preocupações.");
       return;
     }
 
@@ -121,7 +121,7 @@ export default function App() {
 
           {recommendations && (
             <View style={styles.content}>
-              <Text style={styles.title}>Recomendações de jogos 👇</Text>
+              <Text style={styles.title}> 👇 Recomendações de jogos 👇</Text>
               <Text style={{ lineHeight: 24 }}>{recommendations}</Text>
             </View>
           )}
