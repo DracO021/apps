@@ -121,7 +121,7 @@ export default function App() {
 
           {recommendations && (
             <View style={styles.content}>
-              <Text style={styles.title}> 👇 Recomendações de jogos 👇</Text>
+              <Text style={styles.title}> 👇 Recomendações de jogos abaixo 👇</Text>
               <Text style={{ lineHeight: 24 }}>{recommendations}</Text>
             </View>
           )}
