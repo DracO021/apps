@@ -7,7 +7,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import Slider from '@react-native-community/slider';
 
 const statusBarHeight = StatusBar.currentHeight;
-const KEY_GPT = '';
+const KEY_GPT = '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';
 
 export default function App() {
 
@@ -67,7 +67,7 @@ export default function App() {
   }
 
   function createPrompt(genero, tempo) {
-    return `Recomende os 5 melhores jogos do genero ${genero} e gere uma pequena sinopse sobre o jogo e informe o ${tempo} livre que você dispõe para jogar.`;
+    return `Recomende os 5 melhores jogos do genero ${genero} e gere uma pequena sinopse sobre o jogo.`;
   }
 
   return (
@@ -77,7 +77,7 @@ export default function App() {
         <Text style={styles.heading}>Joga AI</Text>
 
         <View style={styles.form}>
-          <Text style={styles.label}>Digite o gênero que você deseja obter recomendações</Text>
+          <Text style={styles.label}>Digite o gênero que você deseja obter recomendações de acordo com as notas do público</Text>
           <TextInput
             placeholder="Ex: Metroidvania"
             style={styles.input}
