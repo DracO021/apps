@@ -104,7 +104,7 @@ export default function App() {
         <ScrollView contentContainerStyle={{ paddingBottom: 24, marginTop: 4 }} style={styles.containerScroll} showsVerticalScrollIndicator={false}>
           {loading && (
             <View style={styles.content}>
-              <Text style={styles.title}>Carregando recomendações...</Text>
+              <Text style={styles.title}>Carregando recomendações... (especialmente pra você 😉​)</Text>
               <ActivityIndicator color="#000" size="large" />
             </View>
           )}
